@@ -15,7 +15,6 @@ class Header extends React.Component {
             <div className='navbar'>
                 <div className='logo'>
                     <a href='#'>
-                        <img src='/images/cj-logo-small.png' alt='Charlie Jewers' width='50'></img>
                     </a>
                 </div>
                 <ul className='nav-list' id='nav-list'>

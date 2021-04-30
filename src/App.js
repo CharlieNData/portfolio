@@ -42,14 +42,17 @@ function App() {
             </div>
             <div className="experience-card-section">
                 <ExperienceCard 
-                  titleText="Freelance Brand Designer"
+                  titleText="Software Engineer, Netcompany"
+                  imgSrc='./images/wrench-solid.svg'
                 />
                 <ExperienceCard 
-                  titleText="Software Engineer at Netcompany"
-                />
-                <ExperienceCard 
-                  titleText="Web Developer at IDS Ltd"
+                  titleText="Web Developer, IDS Ltd"
+                  imgSrc='./images/laptop-code-solid.svg'
                   />
+                <ExperienceCard 
+                  titleText="MComp Computer Science, University of Sheffield"
+                  imgSrc='./images/university-solid.svg'
+                />
             </div>
           </div>    
         <div className="spacer">

@@ -218,19 +218,27 @@ section {
 /* experience cards section */
 
 .experience-card-section {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .experience-card {
-  position: relative;
-  margin-bottom: 50px;
+  height: 300px;
+  width: 300px;
+  border: 1px solid #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.experience-card > * {
-  width: 20vw;
+.experience-card-img {
+  margin-bottom: 20px;
 }
 
-.experience-card-text {
+.experience-card-img img {
+  height: 100px;
 }
 
 .experience-card-text > * {
@@ -293,8 +301,6 @@ section {
   }
 
   .experience-card > * {
-    width: 80%;
-    height: 200px;
     margin: auto;
   }
 

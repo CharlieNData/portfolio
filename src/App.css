@@ -19,6 +19,22 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+}
+
+
+
+
 /* Header */
 
 .navbar {
@@ -59,7 +75,7 @@ a {
 }
 
 .logo {
-  padding: 10px 0;
+  margin: 10px 0;
 }
 
 @media all and (max-width: 480px) {
@@ -90,6 +106,8 @@ a {
 }
 
 
+
+
 /* Big splash section */
 
 section {
@@ -100,10 +118,10 @@ section {
 .main-section {
   width: 70%;
   margin: auto;
-  padding-top: 10vw;
 }
 
 .splash {
+  margin-top: 8vw;
   word-wrap: break-word;
   display: flex;
   align-items: center;
@@ -147,14 +165,18 @@ section {
   }
 }
 
+
+
+
 /* About section */
 
 .about {
   height: 100vh;
+  padding-top: 20px;
 }
 
 .about-me {
-  padding-top: 5vw;
+  margin-top: 5vh;
   display: flex;
   justify-content: space-around;
 }
@@ -163,13 +185,7 @@ section {
   margin-right: 50px;
 }
 
-.text-section h1 {
-  font-size: 30px;
-  margin-bottom: 40px;
-}
-
 .text-section p {
-  font-size: 20px;
   margin-bottom: 20px;
 }
 
@@ -178,18 +194,69 @@ section {
 }
 
 .profile-img img {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   object-fit: cover;
   object-position: 0 20%;
   border-radius: 50%;
 }
 
+.socials {
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
 .socials i {
-  margin-top: 30px;
-  margin-right: 50px;
   color: #1F1F1F;
 }
+
+
+
+
+/* experience cards section */
+
+.experience-card-section {
+  display: block;
+}
+
+.experience-card {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.experience-card > * {
+  width: 20vw;
+}
+
+.experience-card-text {
+}
+
+.experience-card-text > * {
+  color: #1f1f1f;
+  margin-bottom: 10px;
+}
+
+
+
+/* scroll link at bottom */
+
+.spacer {
+  position: relative;
+  height: 12vh;
+}
+
+.spacer.scroll-link {
+  position: absolute;;
+  margin: 0;
+  bottom: 0;
+}
+
+
+
+
+/* responsive elements for About Me page */
 
 @media all and (max-width: 850px) {
   .about-me {
@@ -208,4 +275,32 @@ section {
   .profile-img {
     display: none;
   }
+
+  .experience > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience-card-section {
+    display: block;
+    text-align: center;
+  }
+
+  .experience-card {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .experience-card > * {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+  }
+
+  .experience-card-front {
+    left: 35px;
+  }
+
+  
 }

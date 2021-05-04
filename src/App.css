@@ -56,11 +56,15 @@ p {
 
 .nav-list li {
   display: inline-block;
-  padding: 0 20px
+  padding: 0 20px;
+}
+
+.nav-list a {
+  transition: 0.2s;
 }
 
 .nav-list a:hover {
-  color: #575757;
+  color: #C2C2C2;
 }
 
 .menu {
@@ -137,6 +141,14 @@ section {
   margin-left: 20px;
 }
 
+.react-info-text {
+  margin-top: 10vh;
+}
+
+.react-info-text p {
+  font-size: 18px;
+}
+
 .scroll-link {
   position: absolute;
   left: 0;
@@ -203,16 +215,19 @@ section {
 
 .socials {
   margin: auto;
-  padding: 15px 0;
+  margin-top: 25px;
   display: flex;
   justify-content: space-around;
 }
 
 .socials i {
   color: #1F1F1F;
+  transition: 0.2s;
 }
 
-
+.socials i:hover {
+  color: #C2C2C2;
+}
 
 
 /* experience cards section */
@@ -226,11 +241,54 @@ section {
 .experience-card {
   height: 300px;
   width: 300px;
-  border: 1px solid #1f1f1f;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-card > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  height: 300px;
+  width: 300px;
+}
+
+.experience-card-cover {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  transition: 0.3s;
+}
+
+.experience-card-content-text {
+  margin: 20px;
+}
+
+.experience-card > *:hover {
+  cursor: pointer;
+}
+
+.experience-card-cover:hover {
+  background-color: #1f1f1f;
+}
+
+.experience-card-cover:hover > .experience-card-img > img {
+  filter: invert(100%);
+}
+
+.experience-card-cover:hover > .experience-card-text > * {
+  color: white;
+}
+
+.experience-card-cover.cover-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
 }
 
 .experience-card-img {
@@ -241,9 +299,27 @@ section {
   height: 100px;
 }
 
+.experience-card-content-title {
+  margin-bottom: 10px;
+}
+
 .experience-card-text > * {
   color: #1f1f1f;
   margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.experience-card-content-text > p {
+  font-size: 18px;
+}
+
+.experience-card-content-text ul {
+  margin-top: 20px;
+  list-style-position: inside;
+}
+
+.experience-card-content-text li p {
+  display: inline;
 }
 
 
@@ -252,7 +328,7 @@ section {
 
 .spacer {
   position: relative;
-  height: 12vh;
+  height: 18vh;
 }
 
 .spacer.scroll-link {
@@ -292,15 +368,14 @@ section {
 
   .experience-card-section {
     display: block;
-    text-align: center;
   }
 
-  .experience-card {
+  .experience-card-cover {
     margin: auto;
     margin-bottom: 20px;
   }
 
-  .experience-card > * {
+  .experience-card-cover > * {
     margin: auto;
   }
 

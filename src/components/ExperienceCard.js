@@ -20,6 +20,8 @@ export default class ExperienceCard extends Component {
 
         let titleText = this.props.titleText;
         let imgSrc = this.props.imgSrc;
+        let duration = this.props.duration
+
         let description = this.props.description;
         let skills = this.props.skills;
         let skillsList = skills.map((skill) => 
@@ -44,6 +46,7 @@ export default class ExperienceCard extends Component {
                     </div>
                     <div className="experience-card-text">
                     <p>{titleText}</p>
+                    <p>{duration}</p>
                     </div>
                 </div>
             </div>

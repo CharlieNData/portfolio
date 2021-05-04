@@ -38,32 +38,23 @@ p {
 /* Header */
 
 .navbar {
+}
+
+.socials {
   margin: auto;
-  width: 75%;
+  width: 90%;
+  margin-top: 30px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 50px;
+  justify-content: flex-end;
 }
 
-.navbar .nav-list {
-  list-style-type: none;
-}
-
-.navbar img {
-  mix-blend-mode: multiply;
-}
-
-.nav-list li {
-  display: inline-block;
-  padding: 0 20px;
-}
-
-.nav-list a {
+.socials i {
+  color: #1F1F1F;
   transition: 0.2s;
+  margin: 0 20px;
 }
 
-.nav-list a:hover {
+.socials i:hover {
   color: #C2C2C2;
 }
 
@@ -206,28 +197,14 @@ section {
 }
 
 .profile-img img {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
   object-position: 0 20%;
   border-radius: 50%;
 }
 
-.socials {
-  margin: auto;
-  margin-top: 25px;
-  display: flex;
-  justify-content: space-around;
-}
 
-.socials i {
-  color: #1F1F1F;
-  transition: 0.2s;
-}
-
-.socials i:hover {
-  color: #C2C2C2;
-}
 
 
 /* experience cards section */

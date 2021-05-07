@@ -5,6 +5,7 @@ import HomepageButton from './components/HomepageButton';
 import ProjectCard from './components/ProjectCard';
 
 function App() {
+  
   return (
     <div className="App">
       <section className="front-page">

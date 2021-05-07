@@ -32,7 +32,9 @@ p {
   font-size: 20px;
 }
 
-
+h1:hover, h2:hover , h3:hover, p:hover {
+  cursor: default;
+}
 
 
 /* Background animation */
@@ -145,6 +147,10 @@ section {
   word-wrap: break-word;
   display: flex;
   align-items: center;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; 
 }
 
 .splash h1 {
@@ -177,6 +183,22 @@ section {
 .scroll-link a {
   font-size: 20px;
 }
+
+
+
+
+/* splash floating animation */
+
+@keyframes floating {
+  0% { transform: translate(0, 0px);}
+  50% { transform: translate(0, -10px);}
+  100% { transform: translate(0, 0px);}
+}
+
+
+
+
+/* Responsive splash screen */
 
 @media all and (max-width: 480px) {
   .splash {
@@ -222,6 +244,7 @@ section {
 
 .profile-img {
   margin-left: 50px;
+
 }
 
 .profile-img img {
@@ -231,7 +254,6 @@ section {
   object-position: 0 20%;
   border-radius: 50%;
 }
-
 
 
 

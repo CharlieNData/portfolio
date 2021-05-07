@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
-  color: #1F1F1F
+  color: #1f1f1f;
 }
 
 
@@ -35,38 +35,54 @@ p {
 
 
 
-/* Header */
+/* Background animation */
 
-.navbar {
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    -60deg, #6c3 50%, #09f 50%
+   );
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:absolute;
+  right:-50%;
+  top:0;
+  z-index:-1;
 }
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+/* Header */
 
 .socials {
   margin: auto;
   width: 90%;
-  margin-top: 30px;
+  padding-top: 20px;
   display: flex;
   justify-content: flex-end;
 }
 
 .socials i {
-  color: #1F1F1F;
   transition: 0.2s;
   margin: 0 20px;
-}
-
-.socials i:hover {
-  color: #C2C2C2;
-}
-
-.menu {
-  display: none;
-}
-
-.menu-line {
-  width: 20px;
-  height: 3px;
-  background-color: #575757;
-  margin-bottom: 3px;
 }
 
 .logo {
@@ -74,8 +90,8 @@ p {
 }
 
 @media all and (max-width: 480px) {
-  .navbar {
-    flex-direction: column;
+  .socials {
+    justify-content: center;
   }
 
   .nav-list {
@@ -106,8 +122,17 @@ p {
 /* Big splash section */
 
 section {
+  position: relative;
+}
+
+.front-page {
   height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+
+.front-page h1, .front-page h3, .front-page p, .front-page i, .front-page a {
+  color: white;
 }
 
 .main-section {
@@ -166,6 +191,10 @@ section {
     font-size: 7vw;
     margin: 2vw 0;
   }
+
+  .react-info-text {
+    text-align: center;
+  }
 }
 
 
@@ -174,12 +203,11 @@ section {
 /* About section */
 
 .about {
-  height: 100vh;
   padding-top: 20px;
 }
 
 .about-me {
-  margin-top: 5vh;
+  margin-top: 7vh;
   display: flex;
   justify-content: space-around;
 }
@@ -208,6 +236,10 @@ section {
 
 
 /* experience cards section */
+
+.experience {
+  margin-top: 20px;
+}
 
 .experience-card-section {
   display: flex;
@@ -239,27 +271,16 @@ section {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 .experience-card-content-text {
   margin: 20px;
 }
 
-.experience-card > *:hover {
-  cursor: pointer;
-}
-
 .experience-card-cover:hover {
-  background-color: #1f1f1f;
-}
-
-.experience-card-cover:hover > .experience-card-img > img {
-  filter: invert(100%);
-}
-
-.experience-card-cover:hover > .experience-card-text > * {
-  color: white;
+  opacity:0; 
+  filter:alpha(opacity=0);
 }
 
 .experience-card-cover.cover-hidden {
@@ -344,7 +365,11 @@ section {
   }
 
   .experience-card-section {
-    display: block;
+    flex-direction: column;
+  }
+
+  .experience-card {
+
   }
 
   .experience-card-cover {
@@ -361,4 +386,35 @@ section {
   }
 
   
+}
+
+
+
+
+/* projects page */
+
+.projects {
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.project-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project-card {
+  height: 325px;
+  width: 325px;
+  background-img: "src-images/flux-iphone-mockup.jpg";
+  background-size: cover;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.project-card-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }

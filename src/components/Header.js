@@ -6,11 +6,6 @@ class Header extends React.Component {
         return (
             <div className='navbar'>
                 <SocialBar />
-                <div className='menu' id='menu'>
-                    <div className='menu-line'></div>
-                    <div className='menu-line'></div>
-                    <div className='menu-line'></div>
-                </div>
             </div>
         );
     }

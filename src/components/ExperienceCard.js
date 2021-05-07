@@ -25,7 +25,7 @@ export default class ExperienceCard extends Component {
         let description = this.props.description;
         let skills = this.props.skills;
         let skillsList = skills.map((skill) => 
-        <li>
+        <li key={skill}>
             <p>{skill}</p>
         </li>);
 
@@ -42,7 +42,7 @@ export default class ExperienceCard extends Component {
                 </div>
                 <div className={`experience-card-cover ${this.state.hideCover ? 'cover-hidden' : ''}`} onClick={this.handleHideCover}>
                     <div className="experience-card-img">
-                        <img src={imgSrc}></img>
+                        <img src={imgSrc} alt="Experience Logo"></img>
                     </div>
                     <div className="experience-card-text">
                     <p>{titleText}</p>

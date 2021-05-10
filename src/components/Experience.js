@@ -5,7 +5,7 @@ import ExperienceCard from './ExperienceCard';
 export default class Experience extends Component {
     render() {
         return (
-            <div>
+            <div className="experience-section">
                 <div className="main-section experience">
                     <div className="experience-title">
                     <h2>Experience</h2>

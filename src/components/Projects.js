@@ -19,7 +19,7 @@ export default class Projects extends Component {
                         <ProjectCard title="Video Flux App" imgUrl={flux} />
                         <ProjectCard title="Malluable" imgUrl={malluable} />
                         <ProjectCard title="OJ Electrical" imgUrl={oj} />
-                        <ProjectCard title="Malluable" imgUrl={ainsley} />
+                        <ProjectCard title="Ainsley Assets" imgUrl={ainsley} />
                         <ProjectCard title="Bubbles Stats" imgUrl={bubbles} />
                         <ProjectCard title="Web Design" imgUrl={insightz} centre={true}/>
                     </div>

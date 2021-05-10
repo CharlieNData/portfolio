@@ -433,14 +433,22 @@ section {
   transition: 0.5s;
 }
 
-.project-card-image-holder:hover {
-  transform: scale(1.2);
-}
-
-
 .project-card-title {
-  visibility: hidden;
   position: absolute;
   bottom: 10px;
   left: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.project-card-title > * {
+  color: white;
+}
+
+.project-card:hover .project-card-title {
+    opacity: 1;
+}
+
+.project-card-image-holder:hover {
+  transform: scale(1.2);
 }

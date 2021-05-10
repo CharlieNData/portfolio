@@ -14,15 +14,17 @@ export default class Projects extends Component {
             <div>
                 <section className="projects" id="projects">
                     <div className="main-section">
-                    <h2>Projects</h2>
-                    <div className="project-card-section">
-                        <ProjectCard title="Video Flux App" imgUrl={flux} />
-                        <ProjectCard title="Malluable" imgUrl={malluable} />
-                        <ProjectCard title="OJ Electrical" imgUrl={oj} />
-                        <ProjectCard title="Ainsley Assets" imgUrl={ainsley} />
-                        <ProjectCard title="Bubbles Stats" imgUrl={bubbles} />
-                        <ProjectCard title="Web Design" imgUrl={insightz} centre={true}/>
-                    </div>
+                        <div className="projects-title">
+                            <h2>Projects</h2>
+                        </div>
+                        <div className="project-card-section">
+                            <ProjectCard title="Video Flux App" imgUrl={flux} />
+                            <ProjectCard title="Malluable" imgUrl={malluable} />
+                            <ProjectCard title="OJ Electrical" imgUrl={oj} />
+                            <ProjectCard title="Ainsley Assets" imgUrl={ainsley} />
+                            <ProjectCard title="Bubbles Stats" imgUrl={bubbles} />
+                            <ProjectCard title="IDS Web Design" imgUrl={insightz} centre={true}/>
+                        </div>
                     </div> 
                 </section>
             </div>

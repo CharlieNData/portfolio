@@ -176,7 +176,6 @@ section {
   position: absolute;
   left: 0;
   right: 0;
-  margin: auto;
   bottom: 8vh;
   text-align: center;
 }
@@ -266,6 +265,10 @@ section {
 
 
 /* experience cards section */
+
+.experience-section {
+  margin: 50px 0;
+}
 
 .experience-card-section {
   display: flex;
@@ -434,10 +437,6 @@ section {
     flex-direction: column;
   }
 
-  .experience-card {
-
-  }
-
   .experience-card-cover {
     margin: auto;
     margin-bottom: 20px;
@@ -559,4 +558,22 @@ section {
   -ms-transform: translateY(10%);
   transform: translateY(10%);
 }
+
+.modal-photo-section {
+  width: 40%;
+  height: 100%;
+}
+
+.modal-photo {
+  background-size: cover;
+}
+
+.modal-photo.lg {
+  height: 60%;
+}
+
+.modal-photo.sm {
+  height: 40%;
+}
+
 

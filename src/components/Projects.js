@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import ProjectCard from './ProjectCard';
 
-import flux from "../assets/flux-iphone-mockup.jpg";
 import malluable from "../assets/malluable-bc-mockup.jpg";
 import oj from "../assets/oj-van-mockup.jpg";
 import ainsley from "../assets/ainsley-assets-mockup.jpg";
 import bubbles from "../assets/bubbles-stats-thumbnail.jpg";
 import insightz from "../assets/insightz.jpg";
+
+import flux from "../assets/flux-iphone-mockup.jpg";
+import fluxMockup from "../assets/projects/flux-ipad-mockup.jpg";
 
 export default class Projects extends Component {
 
@@ -45,7 +47,13 @@ export default class Projects extends Component {
                 </section>
                 <div className="project-modal" id="modal">
                     <div className="modal-content">
-
+                        <div className="modal-photo-section">
+                            <div className="modal-photo lg" style={{backgroundImage: `url(${fluxMockup})`}}>
+                            </div>
+                            <div className="modal-photo sm" id="1" style={{backgroundImage: `url(${flux})`}}>
+                            </div>
+                            <div className="modal-photo sm" id="2"></div>
+                        </div>
                     </div>
                 </div> 
             </div>

@@ -10,9 +10,6 @@ export default class Experience extends Component {
         return (
             <div className="experience-section">
                 <div className="main-section experience">
-                    <div className="experience-title">
-                        <h2>Experience</h2>
-                    </div>
                     <div className="experience-card-section">
                         <ExperienceCard 
                         titleText="Software Engineer, Netcompany"

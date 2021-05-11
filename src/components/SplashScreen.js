@@ -22,7 +22,7 @@ export default class SplashScreen extends Component {
                     </div>
                     <div className="react-info-text">
                             <p>
-                            I developed this website from scratch using HTML, CSS and JavaScript within the the <span style={{color: "black"}}>React.js</span> framework.
+                            I developed this website from scratch using HTML, CSS and JavaScript within the the <span style={{color: "red"}}>React.js</span> framework.
                             </p>
                     </div>
                     </div>

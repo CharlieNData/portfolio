@@ -9,15 +9,31 @@ import bubbles from "../assets/bubbles-stats-thumbnail.jpg";
 import insightz from "../assets/insightz.jpg";
 
 export default class Projects extends Component {
+
+    componentDidMount() {
+        var modal = document.getElementById("modal");
+        var body = document.getElementsByTagName("body")[0];
+
+        console.log(modal);
+        window.onclick = function(event) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+              body.style.overflow = "visible"
+            }
+        }
+    }
+
     render() {
+
+        
         return (
-            <div>
+            <div className="projects-wrapper">
                 <section className="projects" id="projects">
                     <div className="main-section">
                         <div className="projects-title">
                             <h2>Projects</h2>
                         </div>
-                        <div className="project-card-section">
+                        <div className="project-card-section" >
                             <ProjectCard title="Video Flux App" imgUrl={flux} />
                             <ProjectCard title="Malluable" imgUrl={malluable} />
                             <ProjectCard title="OJ Electrical" imgUrl={oj} />
@@ -25,9 +41,15 @@ export default class Projects extends Component {
                             <ProjectCard title="Bubbles Stats" imgUrl={bubbles} />
                             <ProjectCard title="IDS Web Design" imgUrl={insightz} centre={true}/>
                         </div>
-                    </div> 
+                    </div>
                 </section>
+                <div className="project-modal" id="modal">
+                    <div className="modal-content">
+
+                    </div>
+                </div> 
             </div>
+
         )
     }
 }

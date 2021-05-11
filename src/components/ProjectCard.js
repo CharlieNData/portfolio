@@ -8,9 +8,19 @@ export default class ProjectCard extends Component {
         let imgUrl = this.props.imgUrl;
         let centre = this.props.centre;
 
+        function openModal() {
+            var modal = document.getElementById("modal");
+            var body = document.getElementsByTagName("body")[0];
+
+            console.log(modal);
+            modal.style.display = "block";
+            body.style.overflow = "hidden";
+        }
+
+
         return (
             <div>
-                <div className="project-card">
+                <div className="project-card" onClick={openModal}>
                     <div className="project-card-image-holder" style={{backgroundImage: `url(${imgUrl})`, backgroundPosition: centre ? "center" : null}}>
                     </div>
                     <div className="project-card-hover-gradient">
